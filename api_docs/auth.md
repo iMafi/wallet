@@ -37,6 +37,8 @@
         userId: 10,                     // number or NULL
         userName:  '1234567890',            // string, required
         userRole: 'admin',                  // admin,user
+        logoFilePath: 'ert/erte/rt.jpg'     //
+      
         rights: [
             canMenu1:       1,  // number
             canMenu2:       1,  // number
