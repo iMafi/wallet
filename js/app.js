@@ -6,7 +6,8 @@ angular.module('wallet-monitor', ['ngRoute'])
             templateUrl: 'templates/index.html',
             controller: 'IndexController'
         }).when('/templates', {
-            templateUrl: 'templates/templates.html'
+            templateUrl: 'templates/templates.html',
+            controller: 'TemplatesController'
         }).otherwise({
             redirectTo: '/'
         })
