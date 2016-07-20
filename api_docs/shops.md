@@ -9,7 +9,7 @@
       user_shop_id:10    //  empty or integer 
 ```
 ### Returns
-#### 
+####  
 #### 200 - object:
 ```js
 {
