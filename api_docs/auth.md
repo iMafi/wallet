@@ -4,8 +4,7 @@
 ## GET: /auth/session/cheq
 ### Send GET:
 ```GET
-    session_id: '390487034987606', // string
-       
+      
 ```
 ### Returns
 #### 200 - object:
