@@ -3,10 +3,10 @@
 angular.module('wallet-monitor', ['ngRoute'])
     .config(function($routeProvider) {
         $routeProvider.when('/', {
-            templateUrl: 'templates/index.html',
+            templateUrl: 'client/templates/index.html',
             controller: 'IndexController'
         }).when('/templates', {
-            templateUrl: 'templates/templates.html'
+            templateUrl: 'client/templates/templates.html'
         }).otherwise({
             redirectTo: '/'
         })
