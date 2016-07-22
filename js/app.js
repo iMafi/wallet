@@ -13,6 +13,14 @@ angular.module('wallet-monitor', ['ngRoute'])
         }).when('/templates', {
             templateUrl: 'templates/templates.html',
             controller: 'TemplatesController'
+        }).when('/templates/:id', {
+            templateUrl: 'templates/tmpl.html',
+            controller: 'TmplController',
+            resolve: {
+                tmpl: function($route, templatesFactory) {
+                    return templatesFactory.getTemplate($route.current.pathParams.id).$promise;
+                }
+            }
         }).otherwise({
             redirectTo: '/'
         })

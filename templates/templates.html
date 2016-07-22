@@ -1,1 +1,28 @@
-<h1>{{hello}}</h1>
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Used</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="template in templates">
+                <td>{{template.id}}</td>
+                <td>{{template.name}}</td>
+                <td>System</td>
+                <td>{{template.description}}</td>
+                <td>100 Times</td>
+                <td>
+                    <button class="btn btn-default" ng-click="editTemplate(template.id)">Edit</button>
+                    <button class="btn btn-default">Copy</button>
+                    <button class="btn btn-default">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

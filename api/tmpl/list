@@ -1,0 +1,48 @@
+{
+    "items": [
+        {
+            "id": 5,
+            "userId": 10,                     
+            "name": "1234567890",             
+            "description": "7890",            
+            "dateCreated": "9999-12-31",
+            "parentId": 10,                   
+            "version": 1,
+            "templateText": "big html text"  
+        },
+        {
+            "id": 6,
+            "userId": 10,                     
+            "name": "1234567890",             
+            "description": "7890",            
+            "dateCreated": "9999-12-31",
+            "parentId": 10,                   
+            "version": 1,
+            "templateText": "big html text"  
+        },
+        {
+            "id": 7,
+            "userId": 10,                     
+            "name": "1234567890",             
+            "description": "7890",            
+            "dateCreated": "9999-12-31",
+            "parentId": 10,                   
+            "version": 1,
+            "templateText": "big html text"  
+        },
+        {
+            "id": 8,
+            "userId": 10,                     
+            "name": "1234567890",             
+            "description": "7890",            
+            "dateCreated": "9999-12-31",     
+            "parentId": 10,                   
+            "version": 1,                     
+            "templateText": "big html text"  
+        }],
+    "pagination": {
+        "totalCount": 0, 
+        "pageCount": 10, 
+        "currentPage": 1 
+    }
+}
