@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group">
+        <label for="tmplName">Template Name</label>
+        <input class="form-control" id="tmplName" placeholder="Template Name" ng-model="templateData.name">
+    </div>
+    <div class="form-group">
+        <label for="tmplDescr">Template Description</label>
+        <input class="form-control" id="tmplDescr" placeholder="Template Description" ng-model="templateData.description">
+    </div>
+    <div class="form-group">
+        <label for="tmplText">Template Name</label>
+        <textarea rows="10" class="form-control" id="tmplText" placeholder="Template Text" ng-model="templateData.templateText"></textarea>
+    </div>
+    <button type="submit" ng-click="createNew($event)" class="btn btn-default">Create Template</button>
+</form>

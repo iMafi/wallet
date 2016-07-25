@@ -20,9 +20,10 @@
                 <td>
                     <button class="btn btn-default" ng-click="editTemplate(template.id)">Edit</button>
                     <button class="btn btn-default">Copy</button>
-                    <button class="btn btn-default">Delete</button>
+                    <button class="btn btn-default" ng-click="deleteTemplate(template.id)">Delete</button>
                 </td>
             </tr>
         </tbody>
     </table>
+    <button type="button" class="btn btn-default" ng-click="createNew()">Create New</button>
 </div>
