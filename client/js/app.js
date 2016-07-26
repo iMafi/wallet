@@ -24,6 +24,9 @@ angular.module('wallet-monitor', ['ngRoute'])
                     return templatesFactory.getTemplate($route.current.params.id);
                 }
             }
+        }).when('/shops', {
+            templateUrl: 'client/templates/shops.html',
+            controller: 'ShopsController'
         }).otherwise({
             redirectTo: '/'
         })
