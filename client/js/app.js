@@ -11,13 +11,13 @@ angular.module('wallet-monitor', ['ngRoute'])
             templateUrl: 'client/templates/index.html',
             controller: 'IndexController'
         }).when('/templates', {
-            templateUrl: 'client/templates/templates.html',
+            templateUrl: 'client/templates/templates/templates.html',
             controller: 'TemplatesController'
         }).when('/createTemplate', {
-            templateUrl: 'client/templates/new.html',
+            templateUrl: 'client/templates/templates/new.html',
             controller: 'CrtTmplController'
         }).when('/templates/:id', {
-            templateUrl: 'client/templates/tmpl.html',
+            templateUrl: 'client/templates/templates/tmpl.html',
             controller: 'TmplController',
             resolve: {
                 singleTmpl: function($route, templatesFactory) {
@@ -25,8 +25,16 @@ angular.module('wallet-monitor', ['ngRoute'])
                 }
             }
         }).when('/shops', {
-            templateUrl: 'client/templates/shops.html',
+            templateUrl: 'client/templates/shops/shops.html',
             controller: 'ShopsController'
+        }).when('/shops/buy', {
+            templateUrl: 'client/templates/shops/buy.html'
+        }).when('/shops/sell', {
+            templateUrl: 'client/templates/shops/sell.html'
+        }).when('/shops/account', {
+            templateUrl: 'client/templates/shops/account.html'
+        }).when('/shops/search', {
+            templateUrl: 'client/templates/shops/search.html'
         }).otherwise({
             redirectTo: '/'
         })
