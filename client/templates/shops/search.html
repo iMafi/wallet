@@ -4,8 +4,9 @@
 <a href="#/shops/buy">Buy</a>
 <a href="#/shops/sell">Sell</a>
 <style>    
-    .mybutton { margin-left: 20px; }
+    .mychebox { margin-left: 20px; }
     .myrow { margin-bottom: 40px; }
+    .mybutton { margin-top: 100px; }
 </style>
 <div class="row myrow">
   <div class="col-md-6">
@@ -25,19 +26,28 @@
 </div>
 
 <div class="row myrow">
-  <div class="col-md-1 mybutton">
-    <label class="checkbox">
-        <input type="checkbox"> Enable
-    </label>
+  <div class="col-md-2">
+	<label>Enable</label>
+  </div>
+  <div class="col-md-2">
+    <input type="checkbox"> 
   </div>
 </div>
 
 <div class="row myrow">
-  <div class="col-md-4">
+  <div class="col-md-2">
+  	<label>Items per page</label>
+  </div>
+  <div class="col-md-3">
 	<select class="form-control">
 	  <option>10</option>
 	  <option>50</option>
 	  <option>100</option>
 	</select>
+  </div>
+</div>
+<div class="row myrow">
+  <div class="col-md-4 mybutton">
+	<button type="button" class="btn btn-default">Save</button>
   </div>
 </div>
